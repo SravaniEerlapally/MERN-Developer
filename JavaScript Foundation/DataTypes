@@ -1,0 +1,36 @@
+PRINT THE DATA
+  -->  console.log("Hi JavaScript");
+  -->  process.stdout.write("Hello Js"); //print in same line where as console everytime we write console prints in new line
+ CONSOLE IS USED FOR VARIOUS
+   --> console.table({city:"Hyderabad'}); //views in table format
+   --> console.warn({city:"None"}); // gives as warn in color
+
+---DATATYPE
+1. STRING
+2. NUMBER
+3. BOOLEAN
+4. BIGINT
+
+5. UNDEFINED
+6. NULL
+
+7. OBJECT
+8. SYMBOL
+
+---VARIABLES
+var score = 102;//old way i.e gloabal scope
+let score = 122; // modest way i.e local scope
+const num = 22;// constaant - it can't be changed once we declare
+
+
+
+
+
+
+
+
+
+
+
+
+
