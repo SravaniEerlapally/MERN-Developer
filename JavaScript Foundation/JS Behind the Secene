@@ -1,0 +1,21 @@
+JavaScript in earlier only used for interactive webpages i.e only for frontend, 
+  Slowly as V8 Engine and nodejs introduced with JS started building Backend, Desktop Apps, Mobile Apps
+  
+V8 Engine
+  -- V8 Engine(Google Opensource) is responsible for running JS Code under the v8 engine is written c++
+NodeJs
+ -- Using V8 Engine as Software that interpret files as code and able to create servers, webapps, command line tools and scripts. 
+
+Deno,Bun, Node Js are JavaScript Environment
+Q) How JavaScript Executes The Code?
+A)       
+            Before The Code Run-Time
+   Step1: Code File --------------------> Syntax Tree(Tokenization)
+                        Parsing
+              
+   Step2:   JIT(Just In Time) Compiler
+
+   Step3:   Byte Code ------------------------------------------> Machine Code
+             jst before convertion 0's & 1's
+
+   Step4:   Code Execution
