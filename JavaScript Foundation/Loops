@@ -1,1 +1,56 @@
+Loops are of 6types in JS: While, Do While, For, For/each, For/in, For/of
+
+Q) Print sum of 1 to 10 numbers?
+  let i=1;
+  let sum = 0;
+  while(i<=10){
+     sum+=i;
+     i++;
+  }
+
+Q)Print fav teas in an array by taking input from users by do while?
+  let FavTeas = [];
+  let tea;
+  do{
+     tea = prompt('Enter you fav tea:');
+     if(tea!=="stop")
+     FavTeas.push(tea);
+  }
+  while(tea!=="stop");
+
+Q)With For Loop multiply array[2,4,6] by 2 and return array named prodArray
+  let array = [2,4,6];
+  let prodArray = [];
+  for(let i=0;i<array.length();i++){
+     prodArray.push(array[i]*2);
+  };
+  console.log(prodArray);
+
+Q)Write a forloop that lists all the cities in the array["Paris","Tokyo","NewYork","London"] 
+  and stores each city in a new array named 'cityList'
+   let array = ["Paris","Tokyo","NewYork","London"];
+   let cityList = [];
+   for(let i=0;i<array.length();i++){
+       cityList.push(array[i]);
+   }
+   console.log(cityList);
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
