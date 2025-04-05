@@ -1,0 +1,63 @@
+Q1)Write a `for` loop that loops through the array ["green tea", "masala tea","tea", "ginger tea"] and stops the loop when it finds "tea".
+Store all teas before "tea" in a selectedTea array.
+A) let arr = ["green tea", "masala tea","tea", "ginger tea"];
+   let selectedTeas = [];
+   for(let i=0;i<arr.length;i++){
+       if(arr[i]==="tea")
+       break;
+       selectedTeas.push(arr[i]);
+   }
+   console.log(selectedTeas);
+
+Q2)Write a `for` loop that loops through the array `["London","NewYork","Paris","Berlin"] and skips "paris".Store the other cities in visitedCities array.
+A)let cities = ["London","NewYork","Paris","Berlin"];
+  let visitedCities = [];
+  for(let i=0;i<cities.length;i++){
+         if(cities[i]==="Paris")
+         continue;
+         visitedCities.push(cities[i]);
+  }
+
+Q3)Use a `for-of` loop to iterate through the array `[1,2,3,4,5]` and the stop the number when 4 is found. Store the numbers before 4 in an array named smallNum.
+A)  for-of loop: is same works as for loop but here the syntax is automatically written initialization and ending just we need yo focus on logic
+   let numbers = [1,2,3,4,5];
+   let smallNum = [];
+   for(const num of numbers){
+      if(num]===4) break;
+      smallNum.push(num);
+   }
+
+Q4)Use a `for-of` loop to iterate through the array `["green tea", "masala tea","herbal tea", "ginger tea"]` skip herbal tea. And store the other teas as preferredTeas.
+A) let teas = ["green tea", "masala tea","herbal tea", "ginger tea"];
+   preferredTeas = [];
+   for(const tea of teas){
+       if(tea === "herbal tea") continue;
+       preferredTeas.push(tea);
+   }
+
+----------------IMPORTANT------------
+Q5)Use a `for-in` loop to loop through an object containing city population. 
+Stop the loop when the population is "Berlin" is found and store all previous cities population in new object named 'cityPopulation'.
+A) let citiesPopulation = {
+   "London":9600000,
+   "NewYork":4700000,
+   "Paris":500000,
+   "Berlin":7000000,
+  }
+  let cityPopulation = {};
+  //console.log(Object.keys(citiesPopulation));
+  /*for(const key in object){
+     if(Object.prototype.hasOwnPropert.call(object,key)){
+        const element = object[key];
+     }
+  }*/
+  for(const city in citiesPopulation){
+       key = value
+       if(city === "Berlin") break;
+       cityPopulation[city] = citiesPopulation[city]; 
+    }
+console.log(cityPopulation);
+
+
+
+
