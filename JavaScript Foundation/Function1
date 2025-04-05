@@ -1,1 +1,45 @@
+Q1)Write a function named 'makeTea' that takes one parameter, 'typeOfTea' and returns a string like 
+"Making Green Tea" when called with "green tea".Store the result in a variable named "teaOrder".
+A)function makeTea(tea){
+      return `Making ${tea}`;
+   }
+   let teaOrder=  function makeTea("lemon tea");
+   console.log(teaOrder);
+
+Q2)Create a function named 'orderTea' that takes one parameter, 'teaType'.
+Inside thi sfunction create another function named 'confirmOrder' that 
+returns a message like 'Order confirmed".
+Call confirmOrder from within orderTea and return the result.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
