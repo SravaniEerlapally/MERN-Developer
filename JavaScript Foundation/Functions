@@ -31,6 +31,7 @@ A) const calculateTotal(price,quantity) => price*quantity;
   }
 
 -------------High Order Functions and Nested Functions-------------------------
+Functions are taken as parameter in loops or functions that are High Order Functions
 Q4)Write a function named `processTeaOrder` that takes another function, `makeTea`, as a parameter 
 and calls it with the argument "early grey".
 Return the result of calling `makeTea`.
@@ -47,9 +48,19 @@ A) function makeTea(typeOfTea){
 Q5)Write a function named `createTeaMaker` that returns another function. 
 The returned function should take one parameter, `teaType` and return a message like "Making green tea".
 Store the returned function in a variable named `teaMaker` and call it with `green tea`.
-A)
+A) function createTeaMaker(){
+      return function("masala tea"){
+              return `Making ${teaType}`;
+      };
+   }
+   let teaMaker = createTeaMaker();
+   console.log(teaMaker("green tea"));
 
+--->storing a function in a variable lets you call as function to get content in function.
+Eg: let teaMaker = createTeaMaker();
+    console.log(teaMaker("green tea"));
 
+                                                               
 
 
 
