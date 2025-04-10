@@ -1,1 +1,38 @@
+There are 2 types of programming paradigms:
+i)Prototype based              ii)class-Object based
 
+JavaScript is initially Prototype based, later OOP's linked but behind the scene runned by Prototype only.
+
+Prototype - means extra properties and functionality in any given datatype.
+
+In JS everything is an Object.
+
+--->How to design a prototype?
+  let computer = {cpu:10};
+  let lenova = {screen:"HD"};
+  let Intel = {};
+
+console.log(computer);
+console.log(`computer`,computer.__) //OP in VScode: computer [Object: null prototype] {}
+//In browser it shows all methods 
+
+//When we use keyword proto we are adding some info added into prototypes
+let computer = {cpu:10};
+let lenova = {
+    screen:"HD",
+    __proto__: computer
+};
+console.log(`lenova`,lenova.__proto__) //OP: lenova {cpu:10}
+
+let genericCar = {tyres:4}
+
+let tesla = {
+    driver:"AI"
+}
+
+Object.setPrototypeOf(tesla, genericCar);
+
+console.log(`tesla`,tesla);//OP:tesla {driver:'AI'}
+console.log(`tesla`,tesla.tyres);// OP: tesla 4
+
+console.log(`tesla`,Object.getPrototypeOf(tesla));//OP: tesla {tyres:4}
