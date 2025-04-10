@@ -1,1 +1,34 @@
+//Class Construction by Functions
+function Person(name, age){
+     this.name = name;
+     this.age = age;
+}
+
+function Car(make,model){
+    this.make = make;
+    this.model = model;
+}
+
+//Object Constructor
+let myCar = new Car("Toyota","Camry");
+console.log(myCar);
+
+let myNewCar = new Car("Tata","Safari");
+console.log(myNewCar);
+
+->new--Whenever we create Object we must use "new" keyword to get access to class internal variables
+
+->this--refers the newly created object inside a constructor function.(anything defining we must use this keyword in constructor function)
+
+function Tea(type){
+   this.type = type;
+   this.describe = function(){
+      return `this is a cup of ${this.type};
+   }
+}
+
+let lemonTea = new Tea("lemon tea");
+console.log(lemonTea);//OP:Tea {type: `lemon tea`, describe:[Function (anonymous)]}
+console.log(lemonTea);//OP: this is a cup of lemon tea
+
 
