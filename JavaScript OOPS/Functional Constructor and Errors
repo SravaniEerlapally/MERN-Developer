@@ -31,4 +31,24 @@ let lemonTea = new Tea("lemon tea");
 console.log(lemonTea);//OP:Tea {type: `lemon tea`, describe:[Function (anonymous)]}
 console.log(lemonTea);//OP: this is a cup of lemon tea
 
+function Animal(species){
+   this.species = species
+}
 
+Animal.prototype.sound = function(){
+   return `${this.species} makes a sound`
+}
+
+let dog = new Animal("Dog");
+console.log(dog.sound());//OP: Dog make a sound
+
+//Errors
+function Drink(name){
+    if(!new.target){
+         throw new Error("Drink must be called with new");
+    }
+    this.name = name
+}
+
+let tea = new Drink("tea")
+let coffee = Drink("coffee")
