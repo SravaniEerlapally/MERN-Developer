@@ -1,1 +1,45 @@
+->Why React?
+Yes, Everything can done by JS DOM. This react makes easy to manage & build complex frontend.
+
+->When to learn?
+Learn React after mastering JS.
+most project don't need React at initial phase
+
+->Why React was created?
+Suppose for FB when there are notifications and you have alread seen 2/5 but not left with 3 , shows 5 notifications in chat.
+This is were React is helpful.
+ State(variables)->JS & UI(updation)->DOM
+There was no sync b/w JS and DOM.
+React updates the DOM, it gives consistency to UI.
+
+->Don't Learn React if you don't know how JS works or DOM Works.
+
+->React Learning Process
+    i)go-in-depth                 or        ii)by building projects(one topic at a time)
+          \/
+    Babel, fibre, Virtual DOM,                         ToDo, Calclator, Github API
+    diff algo, Hydration
+
+->React is a library
+
+->Topics to Learn
+   --core of React(state or UI Manipulation, JSX)
+   --component reusability
+   --Reusing of component(Props)
+   --How to propagate change(Hooks)
+
+->Add on to React
+   --Router(React don't have Router)
+   --State Management (React don't have state management)
+          ----Redux,Redux toolkit, zustand,context API
+   -- Class based component
+          ----legacy code
+   --BAAS Apps
+          ----social media clone, e-commerce App
+
+->After React
+    --React is not a complete solution in most case
+         --no seo, browser Render of JS, no routing
+    --Framework
+         Next JS, Gatsby, Remix
 
