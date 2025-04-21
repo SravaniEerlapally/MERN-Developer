@@ -1,0 +1,23 @@
+Asynchronous---having pause
+
+JavaScript has no capability to run network calls and time fn.
+
+Event Loop
+ Code fn  Stack
+        Queue
+
+CLOSURES
+ -Closures are functions which retains the memory of function.
+
+Function outer(){
+   let counter = 4;
+   return function(){
+      counter++;
+      return counter;
+   }
+}
+let increment = outer();
+console.log(increment());//5
+console.log(increment());//6
+console.log(increment());//7
+
