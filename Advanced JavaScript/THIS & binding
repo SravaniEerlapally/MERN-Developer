@@ -1,0 +1,20 @@
+const Person = {
+  name: "Sravani";
+
+  greet(){
+     console.log(`Hi, Myself ${this.name}`)
+  }
+}
+
+Person.greet();//Hi, Myself Sravani
+
+const greetFunction = Person.greet
+greetFunction()// Hi, Myself undefined
+  Reason: As soon as we transfer from one memory to another or variable changes the context is lost.
+  To avoid this we need to "bind"
+
+BIND
+const boundGreet = person.greet.bind({name:"Radhe"});
+boundGreet();// Hi, Myself Radhe
+
+//bind,call and apply
