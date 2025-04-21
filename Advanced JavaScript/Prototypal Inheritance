@@ -1,0 +1,10 @@
+function Person(name){
+   this.name = name;
+}
+
+Person.Prototype.greet = function(){
+   console.log(`Hi there, Myself ${this.name}`);
+}
+
+let Sravani = new Person("Sravani");
+Sravani.greet();//Hi there, Myself Sravani
