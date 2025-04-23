@@ -1,0 +1,21 @@
+Generator Function- doesn't execute all at once . It actually creates on resume basis.
+     -yield: instead of return use this, it gives the o/p acc to their no.of calling/running
+function* numberGenerator(){
+    yield 1;
+    yield 2;
+    yeild 3;
+}
+let gen = numberGenerator();
+
+console.log(gen);// Object [Geerator] {}
+
+//Iterator-continues and gives undefined when the yield number completes  not goes backward
+console.log(gen.next().value);//1
+console.log(gen.next().value);//2
+console.log(gen.next().value);//3
+console.log(gen.next().value);//undefined
+
+
+
+
+
