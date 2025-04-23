@@ -1,0 +1,61 @@
+//Module import file
+export function add(a,b){
+    return a+b;
+}
+
+export default function multiply(a,b){
+     return a*b;  
+}
+//default format
+import multiply from "file.js";
+
+//named import
+import { add, subtract} from "file.js";
+
+console.log(add(2,2));
+
+//Common JS
+
+function add(a,b){
+   return a+b;
+}
+
+function subtract(a,b){
+    return a-b;
+}
+
+function multiply(a,b){
+     return a*b;
+}
+
+module.exports = {
+  add,
+  subtract,
+  multiply.
+};
+
+const file = require("./file.js");
+
+console.log(file.add(2,5));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
