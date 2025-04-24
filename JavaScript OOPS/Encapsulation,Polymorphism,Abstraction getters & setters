@@ -17,8 +17,86 @@ let account = new BankAccount();
 console.log(account.getBalance());
 
 //Abstraction
+  - hides the complex data and shows only whaat necessary
 class CoffeMachine{
-
+    start(){
+       return `Starting the machine...`;
+    }
+    brewCoffee(){
+        return `Brewing Coffee`;
+    }
+    pressStartButton(){
+         let msg1 = this.start();
+         let msg2 = this.brewCoffee();
+         return `${msg1} + ${msg2}`;
+    }
 }
 
+let myMachine = new CoffeeMachine()
+console.log(myMachine.start());
+console.log(myMachine.brewCoffeet());
 
+console.log(myMachine.pressStartButton());
+
+
+//Polymorphism
+    - ability of something to have more than one form.
+
+class Bird{
+    fly(){
+        return `flying..`;
+    }
+}
+
+class Penguin extends Bird{
+     fly(){
+         return `Penguins can't fly`;
+     }
+}
+
+let bird = new Bird()
+let penguin = new Penguin();
+console.log(bird.fly());
+console.log(penguin.fly());
+
+//static method
+   - these are the special methods which can only be called by the class itself.
+class Calculator{
+    static add(a,b){
+         return a+b;
+    }
+}
+
+let miniCal  = new Calculator();
+console.log(miniCal.add(2,3));//this gives aan error
+
+//through static without initializing any object we can call directly by object
+console.log(Calculator.add(4,7));
+
+//Getters and Setters
+   
+class Employee{
+    #salary;
+    constructor(name,salary){
+         if(salary<0){
+              throw new Error("Salary cannot be negative");
+         }
+         this.name = name;
+         this.#salary = salary;
+    }
+    get salary(){
+         return `You're not allowed to see salary`;
+    }
+    set salary(value){
+       if(value<0){
+           console.error("Invalid Salary");
+       }
+       else{
+           this._salary = value;
+       }
+    }
+}
+let emp = new Employee("Jahnvi",45000);
+console.log(emp._salary);
+//Whenever constructor is called then getter & setters will not be called . directly the constructor value will be executed and ends the function.
+ //While getter and setter we use "_" for identification that are about to comme.
