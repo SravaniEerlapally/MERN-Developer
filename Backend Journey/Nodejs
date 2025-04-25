@@ -1,0 +1,26 @@
+                                    BACKEND
+                                        |           ------------
+                    JS                  |           |          |
+                  react/vue/angular     |           |          |----------
+                  ----------            |           |          |         |
+                  |frontend|            |  API      ------------         |
+                  ----------            |           server|           ======
+                                                     /    |           |====|
+                                             software     ------------======
+                                                                       database
+                                                      ---------
+                                                      |backend|
+                                                      ---------
+                                
+Server is a software, which serves you at given point of time.
+
+-------------------------------------------------------------   
+|    JavaScript                                             |
+|    libuv - is asynchronous I/O(is also included in nodejs)|
+-------------------------------------------------------------
+                 nodeJs
+
+
+
+
+
