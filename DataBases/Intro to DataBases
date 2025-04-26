@@ -1,0 +1,43 @@
+ 
+                            Others(DocumentDB,GraphDB,VectorDB)
+                           /
+                   DATABASE        
+                  /        \
+              SQL           NoSQL
+
+
+
+   Frontend                  |   BackEnd
+                             |       --------|---|-----\
+                             |      /        |   |     \/
+                             |    server<----|---|----DataBase
+                                              ORM        Mongo
+                                          mongoose
+                                          prisma,drizzle
+
+
+Q)Why do we need DataBases?
+A)We want to store data permanently in storage. How long can we keep in memory?
+
+Q) How can we keep data permanently in storage i.e hardDrive?
+A)
+
+Q)SQL Vs NoSQL?
+A) MySQL,PostgreSQL          |    MongoDB
+   Structured                |    Unstructured
+                             |    flexible data models
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
