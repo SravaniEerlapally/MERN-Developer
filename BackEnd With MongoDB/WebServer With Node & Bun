@@ -1,0 +1,122 @@
+Server - ia a just a piece of software whose duty is just to sesrve.
+
+                        Web Server and CLinet Architecture
+
+------------------------------------node---------------------------------------------------------------------------------------------------------
+
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+//what server needs to respond?
+const server = http.createServer((req,res)=>{
+    if(req.url === '/'){
+        res.statusCode = 200;
+        res.setHeader('Content-Type','text/plain');
+        res.end("Hello ice cream");
+    }
+    else if(req.url === '/ice-cream'){
+        res.statusCode = 200;
+        res.setHeader('Content-Type','text/plain');
+        res.end("Thanks for ordering ice cream, its really cool");
+    }
+    else{
+        res.statusCode = 404;
+        res.setHeader('Content-Type','text/plain');
+        res.end("404 Page Not Found");
+    }
+});
+
+//how server should listen?
+server.listen(port,hostname,()=>{
+    console.log(`Server is listening at http://${hostname}:${port}`);
+})
+
+
+------------------------------------------------Bun----------------------------------------------------------------------------------------------------------------------------------------------
+
+import {serve} from 'bun'
+
+serve({
+    fetch(request){
+        const url = new URL(request.url)
+        if(url.pathname === '/'){
+            return new Response('Hello Ice Cream',{status:200})
+        }
+        else if(url.pathname === 'ice-cream'){
+            return new Response('Ice Cream is good in Summers to Chillout',{status:200})
+        }
+        else{
+            return new Response('404 Not Found',{status:404})
+        }
+    },//once fetch method done then end with a comma',' and enter
+    port: 3000,
+    hostname: '127.0.0.1'
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
