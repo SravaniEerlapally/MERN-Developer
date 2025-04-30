@@ -42,4 +42,15 @@ React updates the DOM, it gives consistency to UI.
          --no seo, browser Render of JS, no routing
     --Framework
          Next JS, Gatsby, Remix
+-------------------------------------------------------
+Q)Why react called as spa(single page appliation)?
+A)React is a single page appliation.
+  In index.html most of are written in head , in body only no script and 1 id=root is written.
+    What React does?
+     It takes web application, in every application we have DOM nodes of HTML.
+     React basically does is remove nodes and inject nodes at that place such that we don't have full page reload.
 
+Q)JSX ?
+A)Javascript return in format of HTML i.e stored as JSX
+
+app.jsx accepts only single component.In single component we can add multiple tags to work.
