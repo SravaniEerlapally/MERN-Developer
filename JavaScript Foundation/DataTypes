@@ -6,23 +6,25 @@ PRINT THE DATA
    --> console.warn({city:"None"}); // gives as warn in color
 
 ---DATATYPE
-1. STRING
-2. NUMBER
-3. BOOLEAN
+1. STRING -> is written in "". Eg: let name="Sravani";
+2. NUMBER -> let age = 22;
+3. BOOLEAN -> checks condition true or false i.e paymentDone = true;
 4. BIGINT
 
-5. UNDEFINED
-6. NULL
+5. UNDEFINED-> declared a variable but no value assigned to that variable.
+6. NULL -> where we assign NULL value to a variable.Eg: cost = null; Itstype is "object"
 
-7. OBJECT
+7. OBJECT-> person = {name:"Sravani", age: 22}. Object is a non-primitive data type where multiple values assigned to a single variable.
 8. SYMBOL
 
+Check the data type of a variable. We use of "typeof(variableName)".
 ---VARIABLES
-var score = 102;//old way i.e gloabal scope
+var score = 102;//old way i.e global scope
 let score = 122; // modest way i.e local scope
-const num = 22;// constaant - it can't be changed once we declare
+const num = 22;// constant - it can't be changed once we declare. It must be assigned value while declaring the constandt only.
 
-
+We prefer to declare variables in camelCase .Eg: userMobilePhone 
+Variable Names cannot start with numbers.
 
 
 
